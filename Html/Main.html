@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+
+  <style>
+    .Main_Logo{
+      height: 90px;
+      height: 50px;
+    }
+    .Heading{
+      margin-top: 20px;
+      margin-left: 200px;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    .Para{
+      font-family: 'Open Sans Condensed', sans-serif;
+      font-size: larger;
+    }
+
+    #Para{
+      margin-left: 25px;
+    }
+
+    .Bullet{
+      font-family:'Open Sans Condensed', sans-serif;
+      font-size: large;
+    }
+
+    .NavBar a{
+      padding: 10px;
+      margin-left: 20px;
+      margin-top: 20px;
+      float: left;
+      font-family: 'Abel', sans-serif;
+      font-size: large;
+      border: 0px solid white;
+      border-radius: 30px;
+      text-decoration: none;
+      color: black;
+      box-shadow: 0 3px 5px 0 rgba(0,0,0,0.08);
+      transition: box-shadow 0.3s ease-in-out;
+    }
+    .NavBar a:hover{
+      color: black;
+      box-shadow: 0 5px 15px 2px rgba(0, 0, 0, 0.3);
+    }
+    
+    .Sec_Img{
+      float: right;
+      width: 250px;
+      height: 250px;
+      margin-right: 50px;
+    }
+
+    .Thir_Img{
+      float: right;
+      width: 250px;
+      height: 250px;
+      margin-right: 50px;
+    }
+
+    .pagination{
+      margin-left: 22%;
+    }
+
+    .Key_Points{
+      padding: 15px;
+      border: 0px solid white;
+      border-radius: 10px;
+      box-shadow: 0 0px 0px 0 rgba(0,0,0,0.08);
+      transition: box-shadow 0.3s ease-in-out;
+    }
+    .Key_Points:hover{
+      color: black;
+      box-shadow: 0 5px 15px 2px rgba(0, 0, 0, 0.5);
+    }
+
+    @-webkit-keyframes rotate {
+  100% {
+    transform: rotate(1turn);
+  }
+  }
+  @keyframes rotate {
+    100% {
+      transform: rotate(1turn);
+    }
+  }
+  .Key_Points {
+      position: relative;
+      z-index: 0;
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      overflow: hidden;
+      padding: 1rem;
+  }
+    .button{
+            width: 200px;
+            padding: 15px 0;
+            text-align: center;
+            margin: 20px 10px;
+            font-weight: bold;
+            background: transparent;
+            color: #fff;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+            border: 0px;
+    }
+    span{
+            background: #00C9FF;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #92FE9D, #00C9FF);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #92FE9D, #00C9FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            height: 100%;
+            width: 0;
+            border-radius: 25px;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            z-index: -1;
+            transition: 0.5s;
+    }
+    .button a{
+        text-decoration: none;
+        color: black;
+    }
+    .button a:hover{
+        color: black;
+    }
+    .button:hover span{
+        width: 100%;
+    }
+    .button:hover{
+        border: none;
+    }
+
+    .nav-item dropdown{
+      transition: 1s ease;
+    }
+  
+
+  </style>
+
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+      <div class="Heading">
+        <div class="Key_Points">
+          <br>
+          <h2>What Is Cryptocurrency!</h2>
+          <p class="Para">A cryptocurrency is a digital or virtual currency that is secured by cryptography, which makes it nearly impossible to counterfeit or double-spend. Many   cryptocurrencies are decentralized networks based on blockchain technology—a distributed ledger enforced by a disparate network of computers. A defining feature   of cryptocurrencies is that they are generally not issued by any central authority, rendering them theoretically immune to government interference or manipulation. 
+          </p>
+          
+          <p class="Para"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-lightning-fill" viewBox="0 0 16 16">
+            <path d="M5.52.359A.5.5 0 0 1 6 0h4a.5.5 0 0 1 .474.658L8.694 6H12.5a.5.5 0 0 1 .395.807l-7 9a.5.5 0 0 1-.873-.454L6.823 9.5H3.5a.5.5 0 0 1-.48-.641l2.5-8.5z"/>
+          </svg> <span></span> Key Points</p>
+          <img class="Sec_Img" src="Images/—Pngtree—digital wallet for cryptocurrency_6361156.png" alt="">
+          <li class="Bullet">The word “cryptocurrency” is derived from the encryption techniques which are used to secure the network.</li>
+          <br>
+          <li class="Bullet">Blockchains, which are organizational methods for ensuring the integrity of transactional data, are an essential <p style="margin-left: 2%;" class="Bollet"> component of many cryptocurrencies.</p>
+          </li>
+          <li class="Bullet">Many experts believe that blockchain and related technology will disrupt many industries, including finance and law. </li>
+          <br>
+          <li class="Bullet">Cryptocurrencies face criticism for a number of reasons, including their use for illegal activities, exchange rate volatility, <p style="margin-left: 2%;" class="Bullet"> and vulnerabilities of the infrastructure underlying them.</p></li>
+          <br>
+          <button class="button" type="button"><a href=""><span></span>Learn More</a></button>
+          
+        </div>
+
+        <br>
+        <br>
+
+        <div class="Key_Points">
+          <br>
+          <h2>Why You Should Invest in Cryptocurrency?</h2>
+          <br>
+        <p class="Para"> Let’s check out some of the reasons why you should invest in bitcoin.</p>
+        <br>
+        <h3>The Chance to Make a Profit</h3>
+        <br>
+        <p class="Para">We all know that the main reason why people are so willing to invest in Bitcoin is the fact that it can turn them into overnight millionaires. You can earn Bitcoin by mining it and buying it at a lower price than the one you hope to sell.</p>
+        <br>
+        <h3>Its Massive Future Potential</h3>
+        <br>
+        <img class="Thir_Img" src="Images/—Pngtree—bitcoin trading vector illustration_6594600.png" alt="">
+        <p class="Para">Bitcoin has over 5 million users, with more joining each day.Due to the fact that it is very well-accepted among the people, many experts believe that Bitcoin will continue to rise as time goes on.</p>
+        <p class="Para">Some of them even believe that a time where a majority of the world’s population uses Bitcoin will be reached. During these times, governments will have a lot of pressure from the public and they will have no choice left but to make it an official payment method. Early investors will be able to profit the most from these events.</p>
+        <br>
+        <h3>High Liquidity</h3>
+        <br>
+        <p class="Para">If you are planning to enter the crypto market, you would have looked at the current market stats. Aren't they promising? The rate of cryptocurrencies has been growing steadily over the past few years. The leading cryptocurrencies like bitcoin and Ethereum have shown their importance by consistently delivering good results.</p>
+        <p class="Para">In the past few years, youngsters have shown particular interest in Cryptocurrency and blockchain, so their involvement has helped the industry grow.Primarily during COVID-19, with people being quarantined in their houses, investments in online crypto trading increased. It, in turn, helped raise the liquidity of cryptocurrencies.</p>
+        <p class="Para">It is relatively easy to invest in cryptocurrencies, and even students join the community. All you need to do is buy some coins and then wait for the prices to go up and sell them. Just make sure that you observe the market closely to sell and buy at the precise beneficial points.</p>
+        <br>
+        <button class="button" type="button"><a href=""><span></span>Learn More</a></button>
+
+        </div>
+        
+        <br>
+        <br>
+        
+        <div class="Key_Points">
+          <br>
+          <h3>How You Can Invest In Cryptocurrency?</h3>
+          <br>
+          <p class="Para">Here is how you can invest in crypto coins such as bitcoin, ethereum, dogecoin</p>
+          <img class="Thir_Img" src="Images/—Pngtree—chart of growth trading cryptocurrency_5430738.png" alt="">
+          <br>
+          <h4>Step 1: Find the right crypto exchange</h4>
+          <p class="Para">Since there is no established structure for trading in cryptocurrency yet, crypto exchanges are the platforms where people can buy and sell their digital assets. In India, some of the more popular exchanges are WazirX, CoinDCX, and CoinSwitch Kuber.</p>
+          <br>
+          <h4>Step 2: Uploading Documents and KYC</h4>
+          <p class="Para">Like other regular banks, crypto exchanging or trading accounts require documents to complete the KYC process, like identity proof, address proof, PAN card, etc. This is done to confirm that your account is legal and secure your protection from fraud. Along with personal information, you will also have to provide payment options. All the trading activities you will do like withdrawals and deposits will be done from that payment option that is specified by you.</p>
+          <br>
+          <button class="button" type="button"><a href=""><span></span>Learn More</a></button>
+        </div>
+
+        <br>
+        <br>
+
+        <div class="Key_Points">
+          <br>
+          <h3>Types Of Cryptocurrency</h3>
+          <br>
+          <p class="Para">There are different types of cryptocurrencies</p>
+          <p class="Para">The most popular cryptocurrencies are</p>
+          <img class="Thir_Img" src="Images/ethereum-6334568.png" alt="">
+          <li class="Bullet">Bitcoin</li>
+          <li class="Bullet">Ethereum</li>
+          <li class="Bullet">Dogecoin</li>
+          <li class="Bullet">Cardano</li>
+          <li class="Bullet">Litecoin (LTC)</li>
+          <li class="Bullet">Polkadot (DOT)</li>
+          <li class="Bullet">Bitcoin Cash (BCH)</li>
+          <li class="Bullet"> Chainlink</li>
+          <li class="Bullet">Tether (USDT)</li>
+          <br>
+          <button class="button" type="button"><a href=""><span></span>Learn More</a></button>
+        </div>
+
+        <br>
+        <br>
+        <div class="Key_Points">
+          <br>
+          <h3>What are the risks of trading cryptocurrencies?</h3>
+          <br>
+          <p class="Para" id="Para">The risks of trading cryptocurrencies are mainly related to its volatility. They are high-risk and speculative, and it is important that you understand the risks before you start trading.</p>
+          <li class="Bullet">They are volatile: </li>
+          <p class="Para" id="Para">Unexpected changes in market sentiment can lead to sharp and sudden moves in price. It is not uncommon for the value of cryptocurrencies to quickly drop by hundreds, if not thousands of dollars.</p>
+          <li class="Bullet"> Risks Associated with Peer-to-Peer Transactions</li>
+          <p class="Para" id="Para">Digital currencies can be traded on numerous online platforms, through third party service providers and as peer-to-peer transactions between parties. Many marketplaces simply bring together counterparties without providing any clearing or intermediary services and without being regulated. In such a case, all risks (such as double-selling) remain between the parties directly involved in the transaction.</p>
+          <li class="Bullet">Lack of regulations</li>
+          <p class="Para" id="Para">A lack of regulatory frameworks means there is a high degree of uncertainty like price volatility and manipulation. Investors and entrepreneurs are also concerned about the possibility of future restrictions, which may have a significant impact on the value of cryptocurrencies or end up, ultimately banning them altogether.</p>
+          <p class="Para" id="Para">Crypto regulations are complex, disorganized, and haphazard. One area of particular concern for investors is tax treatment. A lack of regulation or what some term as regulatory greyness means some investors are scared off investing because they don’t have a clear understanding of what tax obligations require consideration or what records must be kept.</p>
+          <br>
+          <button class="button" type="button"><a href=""><span></span>Learn More</a></button>
+        </div>
+
+        <br>
+        <br>
+        <br>
+
+      </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+</body>
+</html>

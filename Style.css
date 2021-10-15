@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.hero{
+    position: relative;
+}
+
+.hero img{
+    float: right;
+    width: 70%;
+}
+
+.btn-box{
+    top: 50%;
+    left: 50%;
+}
+
+a button{
+    margin-top: 30%;
+    margin-left: 10%;
+    padding: 10px;
+    background: transparent;
+    border: 0px solid;
+    font-family:sans-serif;
+    font-size: large;
+    font-weight: 100;
+}
+
+.nav{
+    margin-top: 20px;
+}
+
+.nav ul li{
+    list-style: none;
+    display: inline;
+    padding: 30px;
+}

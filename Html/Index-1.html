@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="nav">
+        <ul>
+            <li onclick="Home()">Home</li>
+            <li onclick="Doc()">Documentation</li>
+            <li onclick="About()">About Us</li>
+        </ul>
+    </div>
+        
+    <div class="hero">
+        <img src="Images/19197541.jpg" id="small">
+    </div>
+
+    <div class="btn-box">
+        <a href=""><button>Get Strated</button></a>
+    </div>
+
+    <script>
+
+        var smallimg = document.getElementById("small");
+
+        function Home(){
+            smallimg.src = "Images/19197541.jpg" 
+        }
+
+        function Doc(){
+            smallimg.src = "Images/Img-2.jpg"
+        }
+
+        function About(){
+            smallimg.src = "Images/Img-3.jpg"
+        }
+
+    </script>
+
+</body>
+</html>

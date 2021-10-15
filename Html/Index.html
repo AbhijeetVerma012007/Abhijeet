@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/91b02e1347.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <style>
+
+        @import url(https://fonts.googleapis.com/css?family=Fira+Sans:400,300,700,500,400italic,500italic,700italic,300italic);
+
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: 'poppins', sans-serif;
+        }
+
+        .hero{
+            width: 100%;
+            min-height: 100vh;
+            background: linear-gradient(45deg, #a700ff , #4d19db);
+            padding-left: 8%;
+            padding-right: 8%;
+            box-sizing: border-box;
+            color: white;
+            position: relative;
+            z-index: 1;
+            overflow: hidden;
+        }
+
+        nav{
+            float: right;
+            align-items: center;
+            padding: 30px 0;
+        }
+
+        .logo{
+            width: 150px;
+        }
+
+        nav ul{
+            flex: 0;
+            float: right;
+        }
+
+        nav ul li{
+            display: inline-block;
+            list-style: none;
+            margin: 0 15px;
+        }
+
+        a{
+            text-decoration: none;
+            color: white;
+        }
+
+        .btn{
+            border: 2px solid white;
+            padding: 6px 25px;
+            border-radius: 30px;
+            margin-left: 30px;
+        }
+
+        .row{
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 10%;
+            justify-content: space-between;
+        }
+
+        .col-1{
+            flex-basis: 40%;
+            min-width: 300px;
+            margin-bottom: 30px;
+            margin-top: 100px;
+            position: relative;
+        }
+
+        .col-2{
+          margin-top: 100px;
+            flex-basis: 55%;
+            min-width: 300px;
+            margin-bottom: 30px;
+        }
+
+        .col-1 img{
+            width: 100%;
+        }
+
+        .col-2 h1{
+            font-size: 60px;
+            font-weight: 600;
+            margin-bottom: 70px;
+        }
+
+        span{
+            color: yellow;
+        }
+
+        .col-2 .btn{
+            margin-left: 0;
+            margin-right: 30px;
+            background: white;
+            color: #4d19db;
+            font-weight: 500;
+        }
+
+        .elements{
+            position: absolute;
+            left: 0;
+            top: 0;
+            animation: move 2.5s linear infinite;
+        }
+
+        @keyframes move{
+
+            0%{
+                transform: translate(-15px, 0);
+            }
+            50%{
+                transform: translate(0px, 15px);
+            }
+            100%{
+                transform: translate(-15px, 0);
+            }
+        }
+
+        .triangle1{
+            position: absolute;
+            left: 50%;
+            top: -180px;
+            transform: translateX(-50%);
+            width: 400px;
+            z-index: -1;
+            opacity: 0.7;
+        }
+
+        .triangle2{
+            position: absolute;
+            left: -50px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 400px;
+            z-index: -1;
+            opacity: 0.7;
+        }
+
+        .circle{
+            position: absolute;
+            right: -100px;
+            bottom: -300px;
+            width: 500px;
+            z-index: -1;
+            opacity: 0.7;
+        }
+
+        *, *:before, *:after {
+         box-sizing: border-box;
+         margin: 0;
+         padding: 0;
+       }
+       
+       body {
+         background: #333;
+         font-family: "Open Sans", Helvetica, Arial, sans-serif;
+       }
+       
+       .buttons {
+         margin-top: 50px;
+         text-align: center;
+         border-radius: 30px;
+       }
+       
+       .blob-btn {
+         z-index: 1;
+         position: relative;
+         padding: 20px 46px;
+         margin-bottom: 30px;
+         text-align: center;
+         text-transform: uppercase;
+         color: #a700ff;
+         font-size: 16px;
+         font-weight: bold;
+         background-color: transparent;
+         outline: none;
+         border: none;
+         transition: color 0.5s;
+         cursor: pointer;
+         border-radius: 30px;
+       }
+       .blob-btn:before {
+         content: "";
+         z-index: 1;
+         position: absolute;
+         left: 0;
+         top: 0;
+         width: 100%;
+         height: 100%;
+         border: 2px solid #a700ff;
+         border-radius: 30px;
+       }
+       .blob-btn:after {
+         content: "";
+         z-index: -2;
+         position: absolute;
+         left: 3px;
+         top: 3px;
+         width: 100%;
+         height: 100%;
+         transition: all 0.3s 0.2s;
+         border-radius: 30px;
+       }
+       .blob-btn:hover {
+         color: #FFFFFF;
+         border-radius: 30px;
+       }
+       .blob-btn:hover:after {
+         transition: all 0.3s;
+         left: 0;
+         top: 0;
+         border-radius: 30px;
+       }
+       .blob-btn__inner {
+         z-index: -1;
+         overflow: hidden;
+         position: absolute;
+         left: 0;
+         top: 0;
+         width: 100%;
+         height: 100%;
+         border-radius: 30px;
+         background: #ffffff;
+       }
+       .blob-btn__blobs {
+         position: relative;
+         display: block;
+         height: 100%;
+         filter: url("#goo");
+       }
+       .blob-btn__blob {
+         position: absolute;
+         top: 2px;
+         width: 25%;
+         height: 100%;
+         background: #a700ff;
+         border-radius: 100%;
+         transform: translate3d(0, 150%, 0) scale(1.7);
+         transition: transform 0.45s;
+       }
+       @supports (filter: url("#goo")) {
+         .blob-btn__blob {
+           transform: translate3d(0, 150%, 0) scale(1.4);
+         }
+       }
+       .blob-btn__blob:nth-child(1) {
+         left: 0%;
+         transition-delay: 0s;
+       }
+       .blob-btn__blob:nth-child(2) {
+         left: 30%;
+         transition-delay: 0.08s;
+       }
+       .blob-btn__blob:nth-child(3) {
+         left: 60%;
+         transition-delay: 0.16s;
+       }
+       .blob-btn__blob:nth-child(4) {
+         left: 90%;
+         transition-delay: 0.24s;
+       }
+       .blob-btn:hover .blob-btn__blob {
+         transform: translateZ(0) scale(1.7);
+       }
+       @supports (filter: url("#goo")) {
+         .blob-btn:hover .blob-btn__blob {
+           transform: translateZ(0) scale(1.4);
+         }
+       }
+        
+    </style>
+
+    <div class="hero">
+
+        <img src="Images/triangle-top.png" alt="" class="triangle1">
+        <img src="Images/triangle-left.png" alt="" class="triangle2">
+        <img src="Images/circle.png" alt="" class="circle">
+
+        <nav>
+
+        <ul>
+
+            <li><a class="Anchor" href="">Home</a></li>
+            <li><a class="Anchor" href="">Documentation</a></li>
+            <li><a class="Anchor" href="">About Us</a></li>
+            
+            
+        </ul>
+
+    </nav>
+
+    <div class="row">
+
+        <div class="col-1">
+
+            <img src="Images/man.png" alt="">
+            <img src="Images/elements.png" alt="" class="elements">
+        </div>
+
+        <div class="col-2">
+            <h1>Learn All <br> About <span>Cryptocurrency</span></h1>
+            
+            <div class="buttons">
+              <a href="Main.html">
+                <button class="blob-btn">
+                  Get Strated
+                  <span class="blob-btn__inner">
+                    <span class="blob-btn__blobs">
+                      <span class="blob-btn__blob"></span>
+                      <span class="blob-btn__blob"></span>
+                      <span class="blob-btn__blob"></span>
+                      <span class="blob-btn__blob"></span>
+                    </span>
+                  </span>
+                </button>
+              </a>
+              <br/>
+            
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+              <defs>
+                <filter id="goo">
+                  <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10"></feGaussianBlur>
+                  <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 21 -7" result="goo"></feColorMatrix>
+                  <feBlend in2="goo" in="SourceGraphic" result="mix"></feBlend>
+                </filter>
+              </defs>
+            </svg>
+
+        </div>
+
+    </div>
+
+    </div>
+
+</body>
+</html>
